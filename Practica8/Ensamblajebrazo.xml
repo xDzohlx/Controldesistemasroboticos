@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="09/09/20||19:26:03" using="Simscape Multibody Link Version 6.1" from="SolidWorks 27.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Ensamblajebrazo" uid="Ensamblajebrazo" version="117">
+<AssemblyFile name="Ensamblajebrazo.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Brazo-1" uid="Brazo-1" entityUid="Brazo*:*Predeterminado">
+<Transform>
+<Rotation>0.93132725262339799 -0.36418339956806611 0 0.36418339956806611 0.93132725262339799 0 0 0 1</Rotation>
+<Translation>-0.0021198340624149483 -0.069644790821304259 0.30150000000002136</Translation>
+</Transform>
+</Instance>
+<Instance name="Brazo-2" uid="Brazo-2" entityUid="Brazo*:*Predeterminado">
+<Transform>
+<Rotation>0.45157096328852436 -0.89223520728262817 0 0.89223520728262817 0.45157096328852436 0 0 0 1</Rotation>
+<Translation>0.17377877089668456 -0.26325054104897422 0.29850000000002136</Translation>
+</Transform>
+</Instance>
+<Instance name="Hombro-1" uid="Hombro-1" grounded="true" entityUid="Hombro*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.053105510001944738 0.060741024545971745 0.30300000000002136</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazo-1</Uid>
+</InstancePath>
+<Position>0 0.14000000000000001 0.0015000000000000013</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0 0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazo-1</Uid>
+</InstancePath>
+<Position>0 0 0.0015000000000000013</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazo-1</Uid>
+</InstancePath>
+<Position>0 -0.14000000000000001 0.0015000000000000013</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazo-2</Uid>
+</InstancePath>
+<Position>0 0.13999999999999999 0.0015000000000000013</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazo-1</Uid>
+</InstancePath>
+<Position>0 0 -0.0015000000000000013</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazo-2</Uid>
+</InstancePath>
+<Position>0 0 0.0015000000000000013</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Brazo" uid="Brazo*:*Predeterminado" version="124">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Brazo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.069487818696511897</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>0.00050517988618250902 4.6702237308755823e-06 0.0005097458781853398 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Brazo_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hombro" uid="Hombro*:*Predeterminado" version="107">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Hombro.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.01282590934825595</Mass>
+<CenterOfMass>0 0 0.0015</CenterOfMass>
+<Inertia>1.8038813654377899e-06 1.8038813654377905e-06 3.5885238668531964e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Hombro_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Diffuse r="0.89803921568627454" g="0.91764705882352937" b="0.92941176470588238" a="1"/>
+<Specular r="0.44901960784313727" g="0.45882352941176469" b="0.46470588235294119" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

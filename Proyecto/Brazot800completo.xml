@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="09/13/20||18:35:18" using="Simscape Multibody Link Version 6.1" from="SolidWorks 27.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Brazot800" uid="Brazot800" version="187">
+<AssemblyFile name="Brazot800.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Antebrazot800-1" uid="Antebrazot800-1" entityUid="Antebrazot800*:*Predeterminado">
+<Transform>
+<Rotation>-0.51112519357289077 0.85950627484333986 3.4914813388431381e-15 -0.85950627484333986 -0.51112519357289077 1.0474444016529362e-14 1.0787434432874595e-14 2.3528021062828767e-15 1</Rotation>
+<Translation>0.044910940401803004 -0.027010450882006973 0.26016508836854602</Translation>
+</Transform>
+</Instance>
+<Instance name="Brazot800-1" uid="Brazot800-1" entityUid="Brazot800*:*Predeterminado">
+<Transform>
+<Rotation>0.99364015378710113 0.11260215265236306 3.4914813388430616e-15 -0.11260215265236306 0.99364015378710113 1.0474444016529291e-14 -2.2898311103749513e-15 -1.080097647811783e-14 1</Rotation>
+<Translation>0.021128212816057205 0.12485522295432297 0.24016508836854455</Translation>
+</Transform>
+</Instance>
+<Instance name="Hombro-1" uid="Hombro-1" grounded="true" entityUid="Hombro*:*Predeterminado">
+<Transform>
+<Rotation>-1.3965925355372497e-14 -3.4914813388432063e-15 1 -1 -1.04744440165294e-14 -1.3965925355372533e-14 1.0474444016529449e-14 -1 -3.4914813388430604e-15</Rotation>
+<Translation>0.022817245105842744 0.13975982526112979 0.26516508836854441</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazot800-1</Uid>
+</InstancePath>
+<Position>0.022499999999999992 -0.14000000000000004 0.035000000000000031</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Antebrazot800-1</Uid>
+</InstancePath>
+<Position>0 -0.01999999999999999 -0.030000000000000027</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazot800-1</Uid>
+</InstancePath>
+<Position>0.022499999999999992 -0.14000000000000001 0.0049999999999999767</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Antebrazot800-1</Uid>
+</InstancePath>
+<Position>0.01999999999999999 -0.029999999999999999 -0.015000000000000013</Position>
+<Axis>1.3010426069826369e-16 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Brazot800-1</Uid>
+</InstancePath>
+<Position>0 0.015000000000000041 0.025000000000000022</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0.010000000000000009 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Brazot800-1</Uid>
+</InstancePath>
+<Position>0 0.015000000000000041 0.025000000000000022</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Hombro-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Antebrazot800" uid="Antebrazot800*:*Predeterminado" version="172">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Antebrazot800.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.83963398580926596</Mass>
+<CenterOfMass>0.0021814273933266162 0.06092535941191931 0.00068262314135551013</CenterOfMass>
+<Inertia>0.0047691585234755658 0.00027937689382926371 0.0048100054062362591 -2.525992683730393e-05 -1.1621168353907268e-05 -0.00011844043179005152</Inertia>
+</MassProperties>
+<GeometryFile name="Antebrazot800_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Diffuse r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Specular r="0.34313725490196079" g="0.32941176470588235" b="0.31960784313725488" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Brazot800" uid="Brazot800*:*Predeterminado" version="328">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Brazot800.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.57709640392988903</Mass>
+<CenterOfMass>0.0032884053926215441 -0.025247576458080786 0.019908307627356684</CenterOfMass>
+<Inertia>0.0013389863545260844 0.00030441929057153276 0.0014162034846731618 -9.7336834774739215e-07 3.485099609665202e-09 0.00016963124024635859</Inertia>
+</MassProperties>
+<GeometryFile name="Brazot800_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Diffuse r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Specular r="0.34313725490196079" g="0.32941176470588235" b="0.31960784313725488" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hombro" uid="Hombro*:*Predeterminado" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Hombro.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.027457519792374787</Mass>
+<CenterOfMass>0 0.0050000000000000001 0</CenterOfMass>
+<Inertia>1.9449076519598812e-06 3.4321899740468492e-06 1.9449076519598812e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Hombro_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Diffuse r="0.68627450980392157" g="0.6588235294117647" b="0.63921568627450975" a="1"/>
+<Specular r="0.34313725490196079" g="0.32941176470588235" b="0.31960784313725488" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
